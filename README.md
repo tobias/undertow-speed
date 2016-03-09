@@ -16,14 +16,15 @@ I then ran `ab` against it with:
     ab -c 50 -n 100000 http://localhost:8181/
 
 throwing away the results of the first run, then averaging the req/s
-of the next six runs. Comparing that value for both versions, I saw a
-~7% decrease in req/s.
+of the next six runs. Calling the `bench-avg.sh` script will do the
+`ab` runs and averaging for you.
 
 This was with (on linux):
 
     openjdk version "1.8.0_71"
     OpenJDK Runtime Environment (build 1.8.0_71-b15)
     OpenJDK 64-Bit Server VM (build 25.71-b15, mixed mode)
+
 
 
 
